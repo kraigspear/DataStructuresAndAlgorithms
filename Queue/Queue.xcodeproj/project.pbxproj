@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A996E75526D28A330008194B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996E75426D28A330008194B /* main.swift */; };
+		A996E75C26D28A860008194B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996E75B26D28A860008194B /* Queue.swift */; };
+		A996E75E26D28B3B0008194B /* QueueArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996E75D26D28B3B0008194B /* QueueArray.swift */; };
+		A996E76026D290A20008194B /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996E75F26D290A20008194B /* QueueStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		A996E75126D28A330008194B /* Queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Queue; sourceTree = BUILT_PRODUCTS_DIR; };
 		A996E75426D28A330008194B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A996E75B26D28A860008194B /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		A996E75D26D28B3B0008194B /* QueueArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueArray.swift; sourceTree = "<group>"; };
+		A996E75F26D290A20008194B /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A996E75426D28A330008194B /* main.swift */,
+				A996E75B26D28A860008194B /* Queue.swift */,
+				A996E75D26D28B3B0008194B /* QueueArray.swift */,
+				A996E75F26D290A20008194B /* QueueStack.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -120,7 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A996E75E26D28B3B0008194B /* QueueArray.swift in Sources */,
 				A996E75526D28A330008194B /* main.swift in Sources */,
+				A996E76026D290A20008194B /* QueueStack.swift in Sources */,
+				A996E75C26D28A860008194B /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
