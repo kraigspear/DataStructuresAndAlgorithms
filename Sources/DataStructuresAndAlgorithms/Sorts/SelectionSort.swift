@@ -26,7 +26,6 @@ public extension Array where Element: Comparable {
          */
 
         for index in 0 ..< (count - 1) {
-            print("index: \(index)")
             var lowestIndex = index
             var lowestVal = copy[index]
 
@@ -39,12 +38,7 @@ public extension Array where Element: Comparable {
             }
 
             if lowestIndex != index {
-                print("lowestIndex: \(lowestIndex)")
-                print("before: \(copy)")
                 copy.swapAt(lowestIndex, index)
-                print("after: \(copy)")
-            } else {
-                print("index is already lowest")
             }
         }
 
