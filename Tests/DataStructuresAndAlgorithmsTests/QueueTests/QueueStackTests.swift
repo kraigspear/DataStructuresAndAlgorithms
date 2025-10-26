@@ -5,8 +5,8 @@
 //  Created by Claude Code
 //
 
-import Testing
 @testable import DataStructuresAndAlgorithms
+import Testing
 
 @Suite("QueueStack Tests")
 struct QueueStackTests {
@@ -14,12 +14,12 @@ struct QueueStackTests {
     func queueStack() {
         testQueue(queueType: QueueStack<String>.self)
     }
-    
+
     @Test("QueueArray")
     func queueArray() {
         testQueue(queueType: QueueArray<String>.self)
     }
-    
+
     func testQueue<Q: Queue<String>>(queueType: Q.Type) {
         var queue = queueType.init()
         #expect(queue.isEmpty, "Initial state, empty")
@@ -27,19 +27,19 @@ struct QueueStackTests {
         #expect(!queue.isEmpty, "Item added, not empty")
         queue.enqueue("Toonsis")
         queue.enqueue("Grumpy")
-        
+
         let dequeue = queue.dequeue()!
         #expect(dequeue == "Tippy", "First item expected")
         #expect(queue.peek == "Toonsis", "We can see the next item, but it's not dequeued yet")
-        
-        #expect("Toonsis" == queue.dequeue(), "Dequeued Toonsis")
+
+        #expect(queue.dequeue() == "Toonsis", "Dequeued Toonsis")
 
         // At this point we have 1 more item in dequeueStack
         // by enqueueing another we'll test that we rebuild dequeueStack, after all items have been removed
-        
+
         queue.enqueue("Happy")
-        
-        #expect("Grumpy" == queue.dequeue(), "last item in dequeueStack")
-        #expect("Happy" == queue.dequeue(), "dequeueStack was rebuilt")
+
+        #expect(queue.dequeue() == "Grumpy", "last item in dequeueStack")
+        #expect(queue.dequeue() == "Happy", "dequeueStack was rebuilt")
     }
 }

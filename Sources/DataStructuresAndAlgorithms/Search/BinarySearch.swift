@@ -6,7 +6,6 @@
 //
 
 public extension Array where Element: Comparable {
-
     /// Performs a binary search to find the index of a target element in a sorted array.
     ///
     /// Binary search is an efficient algorithm that repeatedly divides the search interval in half.
@@ -38,7 +37,6 @@ public extension Array where Element: Comparable {
     /// print(notFound) // nil
     /// ```
     func binarySearch(_ item: Element) -> Int? {
-
         return search(low: 0, high: count - 1)
 
         /// Recursively searches for the target element within the specified range.
@@ -84,8 +82,5 @@ public extension Array where Element: Comparable {
                 high: high
             )
         }
-
-
     }
-
 }
