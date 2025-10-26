@@ -185,7 +185,7 @@ public protocol Queue<T> {
     associatedtype T
 
     init()
-    
+
     // MARK: - Properties
 
     /// A Boolean value indicating whether the queue contains no elements.

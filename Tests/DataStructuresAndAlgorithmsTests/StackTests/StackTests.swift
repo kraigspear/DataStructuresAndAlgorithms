@@ -5,8 +5,8 @@
 //  Created by Claude Code
 //
 
-import Testing
 @testable import DataStructuresAndAlgorithms
+import Testing
 
 @Suite("Stack Tests")
 struct StackTests {

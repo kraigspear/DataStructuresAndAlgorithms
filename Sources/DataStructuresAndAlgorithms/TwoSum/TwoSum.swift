@@ -5,7 +5,6 @@
 //  Created by Kraig Spear on 10/26/25.
 //
 
-
 public func twoSums(_ numbers: [Int], _ target: Int) -> (firstIndex: Int, secondIndex: Int)? {
     // Step 1: Create a dictionary to map values to their indices for numbers we've already seen
     // Why: We're not comparing each value together, but instead generating a possible answer and looking it up in our table.
@@ -18,7 +17,6 @@ public func twoSums(_ numbers: [Int], _ target: Int) -> (firstIndex: Int, second
     // Step 2: Iterate through the array with both index and value
     // Why: We need the index to return as part of the solution
     for (index, value) in numbers.enumerated() {
-
         // Step 3: Generate the complement - the value we would need to have already seen to reach our target
         // Why: Instead of comparing all pairs, we calculate what number would give us the answer and look it up
         //
