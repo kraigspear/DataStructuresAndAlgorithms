@@ -27,25 +27,41 @@ DataStructuresAndAlgorithms/
 │       ├── QueueTests/
 │       ├── StackTests/
 │       └── SortsTests/
+├── docs/                            # Detailed documentation
+│   ├── BigO.md
+│   ├── Queue.md
+│   ├── Stack.md
+│   └── Sorts.md
 ├── scan.sh                          # Dead code scanner
 └── formatcode.sh                    # Code formatter
 ```
 
+## Fundamentals
+
+### Big O Notation
+Understanding algorithm complexity and performance analysis.
+
+📖 [Big O Notation Guide](docs/BigO.md)
+
 ## Implemented Data Structures
 
 ### Queue
-- **QueueArray**: Simple array-based queue implementation
-- **QueueStack**: Optimized queue using dual-stack approach (O(1) amortized operations)
+FIFO (First-In-First-Out) data structure with two implementations:
+- **QueueArray**: Simple array-based implementation (O(n) dequeue - educational)
+- **QueueStack**: Optimized dual-stack approach (O(1) amortized - production)
+
+📖 [Detailed Queue Documentation](docs/Queue.md)
 
 ### Stack
-- Generic stack implementation with:
-  - Array literal initialization
-  - Equatable conformance
-  - CustomStringConvertible
-  - Example: Balanced parentheses checker
+LIFO (Last-In-First-Out) data structure with O(1) push/pop operations.
+
+📖 [Detailed Stack Documentation](docs/Stack.md)
 
 ### Sorting Algorithms
+Implementations of common sorting algorithms:
 - **Selection Sort**: O(n²) comparison-based sorting
+
+📖 [Detailed Sorting Documentation](docs/Sorts.md)
 
 ## Getting Started
 
@@ -134,7 +150,8 @@ To add a new data structure or algorithm:
 2. Add your implementation files
 3. Create corresponding test folder under `Tests/DataStructuresAndAlgorithmsTests/`
 4. Add examples to `Sources/Examples/main.swift`
-5. Update this README
+5. Create detailed documentation in `docs/[Topic].md`
+6. Update this README with a brief description and link to the docs
 
 Example topics to add:
 - LinkedList

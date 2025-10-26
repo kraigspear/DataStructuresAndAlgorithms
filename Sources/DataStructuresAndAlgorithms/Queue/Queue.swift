@@ -171,7 +171,7 @@
 ///
 /// - Note: The protocol uses an associated type `T` rather than generics, allowing each
 ///   conforming type to specify what kind of elements it stores while maintaining type safety.
-protocol Queue<T> {
+public protocol Queue<T> {
     // MARK: - Associated Types
 
     /// The type of elements stored in the queue.

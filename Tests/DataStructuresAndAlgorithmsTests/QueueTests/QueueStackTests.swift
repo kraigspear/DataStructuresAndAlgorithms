@@ -33,7 +33,6 @@ struct QueueStackTests {
         #expect(queue.peek == "Toonsis", "We can see the next item, but it's not dequeued yet")
         
         #expect("Toonsis" == queue.dequeue(), "Dequeued Toonsis")
-        
 
         // At this point we have 1 more item in dequeueStack
         // by enqueueing another we'll test that we rebuild dequeueStack, after all items have been removed
